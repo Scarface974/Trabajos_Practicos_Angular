@@ -1,0 +1,10 @@
+<div class="gallery">
+    <div *ngFor="let image of images" class="image-card" (click)="onImageClick(image)">
+      <img [src]="image.url" [alt]="image.title" />
+      <p>{{ image.title }}</p>
+    </div>
+  </div>
+  
+  <app-image-viewer *ngIf="selectedImage" [image]="selectedImage" (close)="clearSelection()"></app-image-viewer>
+  
+  

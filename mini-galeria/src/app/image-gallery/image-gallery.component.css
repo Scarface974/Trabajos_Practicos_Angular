@@ -1,0 +1,37 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .image-card {
+    width: 150px;
+    text-align: center;
+  }
+  
+  .image-card img {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  /* image-viewer.component.css */
+  .image-viewer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .image-viewer img {
+    width: 300px;
+  }
+  
+  button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
