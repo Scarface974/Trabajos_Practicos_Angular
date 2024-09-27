@@ -11,9 +11,9 @@ import { ImageViewerComponent } from '../image-viewer/image-viewer.component';
 })
 export class ImageGalleryComponent {
   images = [
-    { id: 1, title: 'Imagen 1', url: 'src/assets/img/otaku1.jpg' },
-    { id: 2, title: 'Imagen 2', url: 'src/assets/img/otaku2.jpg' },
-    { id: 3, title: 'Imagen 3', url: 'src/assets/img/otaku3.jpg' }
+    { id: 1, title: 'Figura de Naruto', url: 'assets/otaku1.jpg' },
+    { id: 2, title: 'Capa de Legion de Reconocimiento - Shingeki no Kyojin', url: 'assets/otaku2.jpg' },
+    { id: 3, title: 'Taza Gamer', url: 'assets/otaku3.jpg' }
   ];
   
   selectedImage = null;

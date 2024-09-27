@@ -1,1 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-image: url('assets/wp9684212-anime-compilation-wallpapers.jpg');
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+}
+
+/* Estilo general de la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Estilo para cada tarjeta de imagen */
+  .image-card {
+    width: 200px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .image-card p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Efecto de hover */
+  .image-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Estilo del contenedor del visor de imágenes */
+.image-viewer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: auto;
+  }
+  
+  /* Estilo del botón de cierre */
+  .image-viewer button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .image-viewer button:hover {
+    background-color: #ff1a1a;
+  }
+  
+  /* Estilo de la imagen */
+  .image-viewer img {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Estilo del título de la imagen */
+  .image-viewer h3 {
+    margin-top: 15px;
+    color: #333;
+  }
+  
