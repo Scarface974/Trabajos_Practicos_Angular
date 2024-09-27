@@ -1,0 +1,17 @@
+<h1>Practico N°2 Api Service - Maldonado Gauna Esteban Joel</h1>
+<ul>
+    <li *ngFor="let person of persons">
+      <img [src]="person.profile_photo['256x256']" alt="{{ person.identification.full_name }}" />
+      <h2>{{ person.identification.full_name }} - {{ person.identification.age }} años</h2>
+      <p>Género: {{ person.identification.gender }}</p>
+      <p>Nacionalidad: {{ person.identification.nationality }}</p>
+      <p>Ocupación: {{ person.employment.occupation }}</p>
+      <p>Email: {{ person.contact_information.email_address }}</p>
+      <p>Teléfono: {{ person.contact_information.phone_number }}</p>
+      <p>Dirección: {{ person.contact_information.home_address }}</p>
+    </li>
+  </ul>
+  
+  
+  
+  
